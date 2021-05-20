@@ -1,9 +1,8 @@
 FROM python:3.8
 
-ARG filepath
-ENV filepath=$filepath
+WORKDIR /textcorrect.py 
 
-ADD textcorrect.py .
+COPY . .
 
 RUN pip install transformers sentencepiece python-docx flask
 
