@@ -14,7 +14,7 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
 def check():
-    print("on Ayushri's container")
+    return "<h1>In Textcorrector container</h1>"
 
 
 @app.route('/api/v1/getfile/', methods=['POST'])
